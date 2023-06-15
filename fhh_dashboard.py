@@ -151,8 +151,6 @@ for dataset_name, dataset in datasets.items():
             }
         )
 
-
-
 future_rev = future_rev.round(0)
 future_occ = future_occ.round(2)
 past_rev = past_rev.round(0)
@@ -237,7 +235,6 @@ app.layout = dmc.Container(
     fluid=True,
 )
 
-
 # Callback to update the data table
 @app.callback(
     [Output(component_id='data-table-top', component_property='data'),
@@ -282,8 +279,6 @@ def update_data_table(value_top, value_middle, value_bottom):
         data_bottom = []
 
     return data_top, data_middle, data_bottom
-
-
 
 # Run the App
 if __name__ == '__main__':
